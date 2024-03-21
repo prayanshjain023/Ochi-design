@@ -9,6 +9,7 @@ const Reviews = () => {
   const handleMouseOut1 = () => setIsHovered1(false);
   const handleMouse2 = () => setIsHovered2(true);
   const handleMouseOut2 = () => setIsHovered2(false);
+<<<<<<< HEAD
 
   return (
     <>
@@ -23,13 +24,34 @@ const Reviews = () => {
           <div className="mt-3 md:w-3/12">
             <span className="text-[15px] sm:text-[18px] text-slate-200 font-thin">Services:</span>
             <div className="flex flex-col items-start justify-center gap-3 mt-6 uppercase sm:mt-8 md:mt-14">
+=======
+  return (
+    <>
+      <div className="w-full px-14 py-10 gap-y-[0.1px] text-white bg-black">
+        <h1 className='text-6xl font-["Neue_Montreal"]'>Clients’ reviews</h1>
+        <div className="w-full h-[0.5px] bg-zinc-500 mt-12"> </div>
+
+        <div className="flex w-full ">
+          <div className="w-3/12 text-[18px] mt-3 underline text-slate-200 font-thin">
+            Kerman ventures
+          </div>
+          <div className="w-3/12 mt-3">
+            <span className="text-[18px] text-slate-200 font-thin">
+              Services:
+            </span>
+            <div className="flex flex-col items-start justify-center gap-3 uppercase mt-14 ">
+>>>>>>> origin/master
               <div
                 onMouseOver={handleMouse1}
                 onMouseOut={handleMouseOut1}
                 className="flex items-center gap-[8px]"
               >
                 <span
+<<<<<<< HEAD
                   className={`text-[14px] sm:text-[15px] px-3 py-1 rounded-full border-[1px] font-thin cursor-pointer ${
+=======
+                  className={`text-[15px] px-3 py-1  rounded-full border-[1px] font-thin cursor-pointer ${
+>>>>>>> origin/master
                     isHovered1
                       ? "bg-white text-black"
                       : "text-slate-200 duration-300 ease-in-out"
@@ -38,7 +60,11 @@ const Reviews = () => {
                   Investor Deck
                 </span>
                 <span
+<<<<<<< HEAD
                   className={`w-[28px] sm:w-[32px] h-[28px] sm:h-[32px] text-lg rounded-full border-[2px] text-black border-zinc-100 flex items-center justify-center ${
+=======
+                  className={`w-[32px] h-[32px] text-lg rounded-full border-[2px] text-black  border-zinc-100  flex items-center justify-center ${
+>>>>>>> origin/master
                     isHovered1
                       ? "scale-100 duration-300 ease-in-out bg-white"
                       : "scale-0"
@@ -54,7 +80,11 @@ const Reviews = () => {
                 className="flex items-center gap-[8px]"
               >
                 <span
+<<<<<<< HEAD
                   className={`text-[14px] sm:text-[15px] px-3 py-1 rounded-full border-[1px] font-thin cursor-pointer ${
+=======
+                  className={`text-[15px] px-3 py-1  rounded-full border-[1px] font-thin cursor-pointer ${
+>>>>>>> origin/master
                     isHovered2
                       ? "bg-white text-black"
                       : "text-slate-200 duration-300 ease-in-out"
@@ -63,7 +93,11 @@ const Reviews = () => {
                   Sales deck
                 </span>
                 <span
+<<<<<<< HEAD
                   className={`w-[28px] sm:w-[32px] h-[28px] sm:h-[32px] text-lg rounded-full border-[2px] text-black border-zinc-100 flex items-center justify-center ${
+=======
+                  className={`w-[32px] h-[32px] text-lg rounded-full border-[2px] text-black  border-zinc-100  flex items-center justify-center ${
+>>>>>>> origin/master
                     isHovered2
                       ? "scale-100 duration-300 ease-in-out bg-white"
                       : "scale-0"
@@ -74,6 +108,7 @@ const Reviews = () => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div className="mt-3 md:w-2/6">
             <span className="text-[15px] sm:text-[18px] text-slate-200 font-thin">
               William Barnes
@@ -85,6 +120,20 @@ const Reviews = () => {
             />
             <div className="mt-6 sm:mt-8 md:mt-10">
               <span className="text-[14px] sm:text-[16px] md:text-[17px] text-slate-200 font-thin">
+=======
+          <div className="w-2/6 mt-3">
+            <span className="text-[18px] text-slate-200 font-thin">
+              William Barnes
+            </span>
+            <img
+              className="w-24 h-24 rounded-lg mt-14"
+              src="https://ochi.design/wp-content/uploads/2023/02/William-Barnes-1-300x300.png"
+              alt=""
+              srcset=""
+            />
+            <div className="mt-10">
+              <span className=" text-[17px] text-slate-200 font-thin">
+>>>>>>> origin/master
                 They were transparent about the time and the stages of the
                 project. The end product is high quality, and I feel confident
                 about how they were handholding the client through the process.
@@ -97,6 +146,7 @@ const Reviews = () => {
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="pb-10 mt-10 sm:pb-12 md:pb-14 sm:mt-12 md:mt-14">
           {[
             { name: "Planetly", person: "Nina Walloch" },
@@ -122,6 +172,115 @@ const Reviews = () => {
               </div>
             </React.Fragment>
           ))}
+=======
+        <div className="pb-14 mt-14">
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">Planetly</span>
+            </div>
+            <div className="flex justify-center w-1/3 ">Nina Walloch</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">
+                Hypercare Systems
+              </span>
+            </div>
+            <div className="flex justify-center w-1/3 ">Brendan Goss</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">
+                Premium Blend
+              </span>
+            </div>
+            <div className="flex justify-center w-1/3 ">Ellen Kim</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">
+                Hypercare Systems
+              </span>
+            </div>
+            <div className="flex justify-center w-1/3 ">Brendan Goss</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">Officevibe</span>
+            </div>
+            <div className="flex justify-center w-1/3 ">Raff Labrie</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">Orderlion</span>
+            </div>
+            <div className="flex justify-center w-1/3 ">Stefan Strohmer</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">
+                Premium Blend
+              </span>
+            </div>
+            <div className="flex justify-center w-1/3 ">Ellen Kim</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">Black Book</span>
+            </div>
+            <div className="flex justify-center w-1/3 ">Jaci Smith</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+
+          <div className="w-full h-[0.5px] bg-zinc-500"> </div>
+          <div className="flex justify-between py-4 font-thin">
+            <div className="w-1/3">
+              <span className="underline underline-offset-2">Trawa Energy</span>
+            </div>
+            <div className="flex justify-center w-1/3 ">David Budde</div>
+            <div className="flex justify-end w-1/3 ">
+              <span className="underline underline-offset-4">READ</span>
+            </div>
+          </div>
+>>>>>>> origin/master
         </div>
       </div>
     </>

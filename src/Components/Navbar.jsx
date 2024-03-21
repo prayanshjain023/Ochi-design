@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client'
 
 import React, { useState, useEffect } from "react"
@@ -34,6 +35,35 @@ export default function Navbar() {
       } fixed z-[999] px-4 md:px-20 py-4 md:py-6 text-white font-['Neue Montreal'] transition-all duration-300 ease-in-out`}
     >
       <div className="flex items-center justify-between">
+=======
+import React, { useState, useEffect } from "react";
+const Navbar = () => {
+  const [scrollDirection, setScrollDirection] = useState("down");
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (currentScrollPos > prevScrollPos) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
+  return (
+    <>
+      <div
+        className={`w-full ${
+          scrollDirection === "up" ? "backdrop-blur-sm visible" : "hidden"
+        } fixed z-[999] px-20 py-6 text-white font-["Neue Montreal"] flex justify-between items-center`}
+      >
+>>>>>>> origin/master
         <div className="logo">
           <svg
             width="72"
@@ -65,13 +95,21 @@ export default function Navbar() {
           </svg>
         </div>
 
+<<<<<<< HEAD
         <div className="hidden gap-10 md:flex links">
+=======
+        <div className="flex gap-10 links">
+>>>>>>> origin/master
           {["Services", "Our work", "About us", "Insights", "Contact us"].map(
             (item, index) => (
               <a
                 key={index}
                 className={`font-light capitalize text-md hover:underline transition ease-in-out duration-300 hover:underline-offset-8 hover:cursor-pointer ${
+<<<<<<< HEAD
                   index === 4 && "ml-32"
+=======
+                  index === 4 && "ml-64"
+>>>>>>> origin/master
                 }`}
               >
                 {item}
@@ -79,6 +117,7 @@ export default function Navbar() {
             )
           )}
         </div>
+<<<<<<< HEAD
 
         <button className="md:hidden" onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -102,3 +141,11 @@ export default function Navbar() {
     </nav>
   )
 }
+=======
+      </div>
+    </>
+  );
+};
+
+export default Navbar;
+>>>>>>> origin/master
